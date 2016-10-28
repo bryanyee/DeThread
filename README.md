@@ -1,12 +1,13 @@
-# DeThread &nbsp;&nbsp; [![npm version](https://badge.fury.io/js/dethread.svg)](https://badge.fury.io/js/dethread)
+![Distributed Computing in Javascript](dethreadBlack.png?raw=true) [![npm version](https://badge.fury.io/js/dethread.svg)](https://badge.fury.io/js/dethread)
 
-DeThread is an application library that enables distributed computing with JavaScript in the web browser. 
+deThread is an application library that enables distributed computing with JavaScript in the web browser. 
 
-If you are a DeThread user and would like to provide feed back on how we can improve, please
+If you are a deThread user and would like to provide feed back on how we can improve, please
 [click here to leave some feedback](https://docs.google.com/forms/d/e/1FAIpQLSdRxi7h0A7A0YFU5Bmcj1nduDyMIPpE5H9zZzPCwHnAY7cgdQ/viewform).
 
 We would love the opportunity to dethread your problems.
 
+[Checkout our demo application](http://dethread.io/)
 
 ## Contents 
 1. [Background on Distribued Computing](#background)
@@ -24,7 +25,7 @@ Distributed computing is a processing model that utilizes a network of devices t
 
 ## <a name="install"></a> Installation
 
-In the terminal, install dethread via npm:
+In the terminal, install deThread via npm:
 ```javascript
 npm install --S dethread
 ``` 
@@ -60,7 +61,7 @@ dethread.failedTasks
 ``` 
 ## <a name="gettingStarted"></a> Getting Started
 
-The DeThread library is built on top of the socket.io library.  In your server, simply require the socket.io and dethread modules.
+The deThread library is built on top of the socket.io library.  In your server, simply require the socket.io and dethread modules.
 <br/>
 <br/>
 Getting started is easy, first call dethread.start. 
@@ -108,9 +109,10 @@ Web Workers are used to simulate a multithread environment to enable concurrent 
 socket.emit('clientReady', numWorkers)
 ```
 If numWorkers is not supplied, it defaults to 1.
+
 ## <a name="md5"></a> Examples and Use Cases 
 
-[Example:](http://dethread.io/)
+[Checkout our demo application](http://dethread.io/)
 We used MD5 hash decryption as an example to illustrate the power of distributed computing.  Not only does DeThread allow for users to distribute a problem across multiple bot-net nodes, it distributes the problem further on each connected device. 
 The problem is chunked once before it is distributed, then it is chunked again on the client and distributed to Web Workers dependent upon the client's hardware.
 
